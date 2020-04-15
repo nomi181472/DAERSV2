@@ -1,0 +1,14 @@
+C:\Users\noman\DAERS\DAERS.API\bin\Debug\netcoreapp2.1\DAERS.API.deps.json
+C:\Users\noman\DAERS\DAERS.API\bin\Debug\netcoreapp2.1\DAERS.API.runtimeconfig.json
+C:\Users\noman\DAERS\DAERS.API\bin\Debug\netcoreapp2.1\DAERS.API.runtimeconfig.dev.json
+C:\Users\noman\DAERS\DAERS.API\bin\Debug\netcoreapp2.1\DAERS.API.dll
+C:\Users\noman\DAERS\DAERS.API\bin\Debug\netcoreapp2.1\DAERS.API.pdb
+C:\Users\noman\DAERS\DAERS.API\obj\Debug\netcoreapp2.1\DAERS.API.csprojAssemblyReference.cache
+C:\Users\noman\DAERS\DAERS.API\obj\Debug\netcoreapp2.1\DAERS.API.csproj.CoreCompileInputs.cache
+C:\Users\noman\DAERS\DAERS.API\obj\Debug\netcoreapp2.1\DAERS.API.RazorAssemblyInfo.cache
+C:\Users\noman\DAERS\DAERS.API\obj\Debug\netcoreapp2.1\DAERS.API.RazorAssemblyInfo.cs
+C:\Users\noman\DAERS\DAERS.API\obj\Debug\netcoreapp2.1\DAERS.API.AssemblyInfoInputs.cache
+C:\Users\noman\DAERS\DAERS.API\obj\Debug\netcoreapp2.1\DAERS.API.AssemblyInfo.cs
+C:\Users\noman\DAERS\DAERS.API\obj\Debug\netcoreapp2.1\DAERS.API.RazorTargetAssemblyInfo.cache
+C:\Users\noman\DAERS\DAERS.API\obj\Debug\netcoreapp2.1\DAERS.API.dll
+C:\Users\noman\DAERS\DAERS.API\obj\Debug\netcoreapp2.1\DAERS.API.pdb
