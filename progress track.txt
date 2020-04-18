@@ -31,4 +31,7 @@ after that install packages in vscode
 watch video 17. adding git
 location of projectC:\Users\noman\DAERS 
 
+15 c# power by omni sharp
+16 c# extension
+
 

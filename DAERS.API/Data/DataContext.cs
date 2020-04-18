@@ -1,3 +1,4 @@
+using DAERS.API.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DAERS.API.Data
@@ -8,5 +9,6 @@ namespace DAERS.API.Data
         {
             
         }
+        public DbSet<User> Users { get; set; }
     }
 }
