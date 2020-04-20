@@ -41,6 +41,7 @@ namespace DAERS.API.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserForLoginDto LogDto)
         {
+            throw new Exception("Computer says no!");
             var userFromRepo=await Repo.Login(LogDto.Username.ToLower(),LogDto.Password);
             if(userFromRepo==null)
             return Unauthorized();
