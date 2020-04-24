@@ -1,16 +1,12 @@
 using System;
-using System.Collections.Generic;
 
-namespace DAERS.API.Models
+namespace DAERS.API.Dtos
 {
-    public class User
-    {
-        public int Id { get; set; }
+    public class UserForListDto
+    {public int Id { get; set; }
         public string UserName { get; set; }
-        public byte[] PasswordHash { get; set; }
-        public byte[] PasswordSalt { get; set; }
         public string Gender { get; set; }
-        public DateTime DateOfBirth { get; set; }
+        public int Age { get; set; }
         public DateTime Created { get; set; }
         public DateTime LastActive   { get; set; }
         public string Introduction { get; set; }
@@ -19,12 +15,8 @@ namespace DAERS.API.Models
         public float Height { get; set; }
         public float Weight { get; set; }
         public float Bmi { get; set; }
-        public string Category { get; set; }
         public string Email { get; set; }
-        public ICollection<PhotoU> Photos { get; set; }
+        public string PhotoUrl { get; set; }
 
-
-       
-        
     }
 }

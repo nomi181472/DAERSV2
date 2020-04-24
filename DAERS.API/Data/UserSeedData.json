@@ -1,0 +1,222 @@
+[
+    {
+      "Username": "Bass",
+      "Gender": "male",
+      "DateOfBirth": "1954-09-29",
+      "Password": "password",
+      "Created": "2017-08-07",
+      "Introduction": "Ex dolore culpa amet reprehenderit do sit consequat fugiat proident ipsum fugiat deserunt Lorem aute. Tempor dolore labore cupidatat do elit consequat amet. Est quis dolore cillum culpa commodo deserunt exercitation nulla deserunt ad consectetur eu.\r\n",
+      "City": "Hilltop",
+      "Country": "Czech Republic",
+      "Weight": 109,
+      "Height": 4,
+      "Email": "Bass@gmail.com",
+      "Category": "l",
+      "Bmi": 6.8125,
+      "Photos": [
+        {
+          "url": "https://randomuser.me/api/portraits/men/50.jpg",
+          "isMain": true,
+          "description": "Officia mollit quis veniam dolore tempor non."
+        }
+      ]
+    },
+    {
+      "Username": "Berger",
+      "Gender": "male",
+      "DateOfBirth": "1990-12-17",
+      "Password": "password",
+      "Created": "2017-08-14",
+      "Introduction": "Duis magna voluptate cupidatat et id consectetur exercitation. Consectetur dolore laboris duis nulla in veniam in in nulla eiusmod esse magna sunt. Irure sint fugiat do id veniam ex labore minim ut nostrud in sit aliquip nostrud.\r\n",
+      "City": "Lodoga",
+      "Country": "Thailand",
+      "Weight": 112,
+      "Height": 7,
+      "Email": "Berger@gmail.com",
+      "Category": "l",
+      "Bmi": 2.2857142857142856,
+      "Photos": [
+        {
+          "url": "https://randomuser.me/api/portraits/men/62.jpg",
+          "isMain": true,
+          "description": "Nostrud elit ipsum aliquip nisi sint cillum sit magna non laborum excepteur quis proident."
+        }
+      ]
+    },
+    {
+      "Username": "Powers",
+      "Gender": "male",
+      "DateOfBirth": "1988-02-10",
+      "Password": "password",
+      "Created": "2017-05-24",
+      "Introduction": "Non Lorem excepteur aute nisi ut occaecat reprehenderit id. Do eiusmod adipisicing fugiat Lorem. Ex amet aliquip ipsum in ut commodo aliquip. Occaecat tempor adipisicing quis elit. Pariatur pariatur est mollit proident laboris qui voluptate esse velit veniam exercitation.\r\n",
+      "City": "Felt",
+      "Country": "Moldova",
+      "Weight": 107,
+      "Height": 5,
+      "Email": "Powers@gmail.com",
+      "Category": "l",
+      "Bmi": 4.28,
+      "Photos": [
+        {
+          "url": "https://randomuser.me/api/portraits/men/86.jpg",
+          "isMain": true,
+          "description": "Dolore enim ut cupidatat exercitation dolor laboris incididunt quis laboris."
+        }
+      ]
+    },
+    {
+      "Username": "Moran",
+      "Gender": "male",
+      "DateOfBirth": "1989-08-06",
+      "Password": "password",
+      "Created": "2017-05-08",
+      "Introduction": "Ipsum voluptate ullamco est non et quis commodo ad. Enim occaecat consequat qui ut id ullamco. Ad aliqua nulla culpa dolor mollit est qui nisi cillum nulla ad magna dolor qui. Ex non ad et nulla nulla veniam officia laborum fugiat. Excepteur minim eiusmod Lorem sunt dolore quis eiusmod consectetur consequat ex reprehenderit enim anim aute.\r\n",
+      "City": "Torboy",
+      "Country": "Australia",
+      "Weight": 46,
+      "Height": 4,
+      "Email": "Moran@gmail.com",
+      "Category": "l",
+      "Bmi": 2.875,
+      "Photos": [
+        {
+          "url": "https://randomuser.me/api/portraits/men/53.jpg",
+          "isMain": true,
+          "description": "Amet nostrud aliqua duis sit tempor labore deserunt sunt nisi commodo anim cillum exercitation commodo."
+        }
+      ]
+    },
+    {
+      "Username": "Avila",
+      "Gender": "male",
+      "DateOfBirth": "1995-08-22",
+      "Password": "password",
+      "Created": "2017-04-06",
+      "Introduction": "Minim mollit ullamco cupidatat proident. Mollit qui veniam ut dolor aliqua sunt commodo eu et est esse aliqua. Aute commodo amet culpa labore occaecat incididunt aliqua id occaecat aliquip est. Non labore voluptate ullamco dolore officia magna laborum id mollit adipisicing consequat eiusmod.\r\n",
+      "City": "Munjor",
+      "Country": "French Guiana",
+      "Weight": 118,
+      "Height": 5,
+      "Email": "Avila@gmail.com",
+      "Category": "l",
+      "Bmi": 4.72,
+      "Photos": [
+        {
+          "url": "https://randomuser.me/api/portraits/men/19.jpg",
+          "isMain": true,
+          "description": "Cillum occaecat anim cillum officia irure amet irure id."
+        }
+      ]
+    },
+    {
+      "Username": "Kirkland",
+      "Gender": "male",
+      "DateOfBirth": "1960-08-26",
+      "Password": "password",
+      "Created": "2017-05-07",
+      "Introduction": "Commodo ipsum est eu do irure nulla tempor consequat voluptate nisi Lorem. Deserunt ad amet in officia ullamco excepteur aliqua ex nulla. Consequat veniam culpa aliqua laboris sint aliqua enim esse sint eu consequat elit. Eiusmod consequat nostrud consectetur dolor. Reprehenderit occaecat pariatur reprehenderit irure esse est ut commodo ullamco veniam adipisicing proident. Lorem sint enim sit ex ad magna culpa sint nostrud elit officia dolore tempor laborum. Labore in sint labore minim dolor officia dolore sunt consectetur voluptate non enim.\r\n",
+      "City": "Iola",
+      "Country": "St. Pierre and Miquelon",
+      "Weight": 101,
+      "Height": 6,
+      "Email": "Kirkland@gmail.com",
+      "Category": "l",
+      "Bmi": 2.8055555555555554,
+      "Photos": [
+        {
+          "url": "https://randomuser.me/api/portraits/men/26.jpg",
+          "isMain": true,
+          "description": "Qui dolor velit non aliquip anim deserunt cupidatat."
+        }
+      ]
+    },
+    {
+      "Username": "Glover",
+      "Gender": "male",
+      "DateOfBirth": "1981-11-28",
+      "Password": "password",
+      "Created": "2017-05-05",
+      "Introduction": "Esse qui voluptate commodo amet sunt proident incididunt ut. Cupidatat irure laborum reprehenderit fugiat eiusmod nisi sint aute velit ut eiusmod in in esse. Officia amet incididunt commodo aliqua fugiat sunt laborum quis. Mollit tempor culpa dolor ullamco. Quis duis consequat qui amet aute.\r\n",
+      "City": "Kieler",
+      "Country": "Samoa",
+      "Weight": 104,
+      "Height": 5,
+      "Email": "Glover@gmail.com",
+      "Category": "l",
+      "Bmi": 4.16,
+      "Photos": [
+        {
+          "url": "https://randomuser.me/api/portraits/men/96.jpg",
+          "isMain": true,
+          "description": "Aliquip anim labore nostrud cupidatat nisi consectetur tempor mollit commodo."
+        }
+      ]
+    },
+    {
+      "Username": "Stephens",
+      "Gender": "male",
+      "DateOfBirth": "1950-11-27",
+      "Password": "password",
+      "Created": "2017-06-28",
+      "Introduction": "Deserunt aliqua cillum duis voluptate laboris. Magna cupidatat amet in occaecat sit laboris qui aliquip. Laborum consectetur irure eu enim. Voluptate aliquip labore velit fugiat anim. Anim voluptate ea aliquip velit irure ullamco pariatur laborum.\r\n",
+      "City": "Cornfields",
+      "Country": "Namibia",
+      "Weight": 103,
+      "Height": 5,
+      "Email": "Stephens@gmail.com",
+      "Category": "l",
+      "Bmi": 4.12,
+      "Photos": [
+        {
+          "url": "https://randomuser.me/api/portraits/men/26.jpg",
+          "isMain": true,
+          "description": "Cupidatat dolor et dolor excepteur quis excepteur duis duis esse et proident officia incididunt tempor."
+        }
+      ]
+    },
+    {
+      "Username": "Mccarthy",
+      "Gender": "male",
+      "DateOfBirth": "1965-07-12",
+      "Password": "password",
+      "Created": "2017-03-28",
+      "Introduction": "Esse nostrud officia quis nostrud in ut ullamco adipisicing proident veniam excepteur excepteur. Velit labore nulla nisi non excepteur culpa fugiat magna sunt ullamco dolor sint. Aliqua excepteur dolore eu labore ipsum adipisicing eiusmod elit nulla exercitation labore id consequat aute. Fugiat duis velit consequat fugiat magna cillum labore.\r\n",
+      "City": "Snyderville",
+      "Country": "Hong Kong",
+      "Weight": 77,
+      "Height": 5,
+      "Email": "Mccarthy@gmail.com",
+      "Category": "l",
+      "Bmi": 3.08,
+      "Photos": [
+        {
+          "url": "https://randomuser.me/api/portraits/men/93.jpg",
+          "isMain": true,
+          "description": "Dolor veniam sint pariatur excepteur."
+        }
+      ]
+    },
+    {
+      "Username": "Hampton",
+      "Gender": "male",
+      "DateOfBirth": "1957-08-22",
+      "Password": "password",
+      "Created": "2017-02-11",
+      "Introduction": "Consectetur in cupidatat officia consectetur proident fugiat minim incididunt laboris veniam velit quis irure consectetur. Dolor deserunt non Lorem laboris deserunt nulla cillum sit pariatur elit qui aute. Ullamco laborum dolore duis ex ex tempor eu in. Nulla mollit excepteur officia do commodo aliquip aliquip. Est ullamco veniam eu non qui et voluptate deserunt proident aute.\r\n",
+      "City": "Bowmansville",
+      "Country": "Faroe Islands",
+      "Weight": 112,
+      "Height": 5,
+      "Email": "Hampton@gmail.com",
+      "Category": "l",
+      "Bmi": 4.48,
+      "Photos": [
+        {
+          "url": "https://randomuser.me/api/portraits/men/56.jpg",
+          "isMain": true,
+          "description": "Lorem pariatur ut officia elit deserunt."
+        }
+      ]
+    }
+  ]

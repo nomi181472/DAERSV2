@@ -35,3 +35,48 @@ location of projectC:\Users\noman\DAERS
 16 c# extension
 
 
+
+
+[
+  '{{repeat(5)}}',
+  {
+    Username: '{{firstName("male")}}',
+    Gender: 'male',
+    DateOfBirth: '{{date(new Date(1950,0,1), new Date(1999, 11, 31), "YYYY-MM-dd")}}',
+    Password: 'password',
+    Created: '{{date(new Date(2017,0,1), new Date(2017, 7, 31), "YYYY-MM-dd")}}',
+    LastActive: function(){return this.DateCreated; },
+    Introduction: '{{lorem(1, "paragraphs")}}',
+    City: '{{city()}}',
+    Country: '{{country()}}',
+    Weight:'{{integer(30, 130)}}',
+    Height:'{{integer(4,7)}}',
+    Email:function(){return this.Username.concat("@gmail.com");},
+    Category:'l',
+    Bmi:function(){return (this.Weight)/(this.Height*this.Height);},
+    Photos: [
+        {
+          url: function(num) {
+          return 'https://randomuser.me/api/portraits/men/' + num.integer(1,99) + '.jpg';
+        },
+        isMain: true,
+        description: '{{lorem()}}'
+      }
+    ]
+  }
+]
+
+        
+        
+        
+        
+
+        
+        
+        
+        
+
+      
+  
+  
+
