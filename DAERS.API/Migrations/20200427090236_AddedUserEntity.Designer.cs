@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAERS.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200424094501_AddedUserTable")]
-    partial class AddedUserTable
+    [Migration("20200427090236_AddedUserEntity")]
+    partial class AddedUserEntity
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -45,6 +45,8 @@ namespace DAERS.API.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<int>("Age");
+
                     b.Property<float>("Bmi");
 
                     b.Property<string>("Category");
@@ -54,8 +56,6 @@ namespace DAERS.API.Migrations
                     b.Property<string>("Country");
 
                     b.Property<DateTime>("Created");
-
-                    b.Property<DateTime>("DateOfBirth");
 
                     b.Property<string>("Email");
 
@@ -67,11 +67,15 @@ namespace DAERS.API.Migrations
 
                     b.Property<DateTime>("LastActive");
 
+                    b.Property<float>("Lats");
+
                     b.Property<byte[]>("PasswordHash");
 
                     b.Property<byte[]>("PasswordSalt");
 
                     b.Property<string>("UserName");
+
+                    b.Property<float>("Waist");
 
                     b.Property<float>("Weight");
 

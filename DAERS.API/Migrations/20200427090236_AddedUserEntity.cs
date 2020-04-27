@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DAERS.API.Migrations
 {
-    public partial class AddedUserTable : Migration
+    public partial class AddedUserEntity : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -17,7 +17,7 @@ namespace DAERS.API.Migrations
                     PasswordHash = table.Column<byte[]>(nullable: true),
                     PasswordSalt = table.Column<byte[]>(nullable: true),
                     Gender = table.Column<string>(nullable: true),
-                    DateOfBirth = table.Column<DateTime>(nullable: false),
+                    Age = table.Column<int>(nullable: false),
                     Created = table.Column<DateTime>(nullable: false),
                     LastActive = table.Column<DateTime>(nullable: false),
                     Introduction = table.Column<string>(nullable: true),
@@ -25,6 +25,8 @@ namespace DAERS.API.Migrations
                     Country = table.Column<string>(nullable: true),
                     Height = table.Column<float>(nullable: false),
                     Weight = table.Column<float>(nullable: false),
+                    Waist = table.Column<float>(nullable: false),
+                    Lats = table.Column<float>(nullable: false),
                     Bmi = table.Column<float>(nullable: false),
                     Category = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true)

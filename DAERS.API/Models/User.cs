@@ -10,7 +10,7 @@ namespace DAERS.API.Models
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
         public string Gender { get; set; }
-        public DateTime DateOfBirth { get; set; }
+        public int Age { get; set; }
         public DateTime Created { get; set; }
         public DateTime LastActive   { get; set; }
         public string Introduction { get; set; }
@@ -18,6 +18,9 @@ namespace DAERS.API.Models
         public string Country { get; set; }
         public float Height { get; set; }
         public float Weight { get; set; }
+        public float Waist { get; set; }
+        public float Lats { get; set; }
+
         public float Bmi { get; set; }
         public string Category { get; set; }
         public string Email { get; set; }
