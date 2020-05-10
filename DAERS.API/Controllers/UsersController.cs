@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
 using DAERS.API.Data;
@@ -33,12 +34,24 @@ namespace DAERS.API.Controllers
             return Ok(userToReturn);
 
         }
-        [HttpGet("{id}")]
+        [HttpGet("{id}",Name="GetUser")]
         public async Task<IActionResult> GetUser(int id)
         {
             var user = await _repo.GetUser(id);
             var userToReturn=_mapper.Map<UserForDetailedDto>(user);
             return Ok(userToReturn);
+        }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateUser(int id,UserForUpdateDto udto)
+        {
+            if(id!=int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
+            return Unauthorized();
+            var userfromrepo=await _repo.GetUser(id);
+            _mapper.Map(udto,userfromrepo);
+            if(await _repo.SaveAll())
+            return NoContent();
+            throw new System.Exception($"Updating user{id} failed on save");
+
         }
 
     }
