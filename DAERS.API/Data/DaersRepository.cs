@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using DAERS.API.Models;
 using Microsoft.EntityFrameworkCore;
@@ -37,6 +38,17 @@ namespace DAERS.API.Data
         public async Task<bool> SaveAll()
         {
             return await _context.SaveChangesAsync()>0;
+        }
+
+        public async Task<PhotoU> GetPhoto(int id)
+        {
+            var photo= await _context.Photos.FirstOrDefaultAsync(p => p.Id==id);
+            return photo;
+        }
+
+        public async Task<PhotoU> GetMainPhotoForUser(int userId)
+        {
+            return await _context.Photos.Where(u=>u.UserId==userId).FirstOrDefaultAsync(p=>p.IsMain);
         }
     }
 }
