@@ -76,7 +76,7 @@ namespace DAERS.API
             }
 
             //app.UseHttpsRedirection();
-           // seeder.SeedUsers();
+           seeder.SeedUsers();
             app.UseCors(x=>x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseAuthentication();
             app.UseMvc();
