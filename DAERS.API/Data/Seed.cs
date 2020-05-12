@@ -11,8 +11,7 @@ namespace DAERS.API.Data
         {
             _context = context;
 
-        }
-        public void SeedUsers()
+        }        public void SeedUsers()
         {
             var userData=System.IO.File.ReadAllText("Data/UserSeedData.json");
             var users=JsonConvert.DeserializeObject<List<User>>(userData);

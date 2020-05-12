@@ -44,6 +44,11 @@ namespace DAERS.API.Data
             CreatePasswordHash(password,out passwordH,out passwordS);
             user.PasswordHash=passwordH;
             user.PasswordSalt=passwordS;
+            int Height=Convert.ToInt32(user.Height)*12;
+            double H=user.Height-Convert.ToInt32(user.Height);
+            Height=Height+Convert.ToInt32(H*100);
+            double w=user.Weight*2.20462*703;
+            user.Bmi=(float)w/(Height*Height);
             await Context.Users.AddAsync(user);
             await Context.SaveChangesAsync();
             return user;

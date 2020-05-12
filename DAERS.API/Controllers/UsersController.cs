@@ -53,6 +53,5 @@ namespace DAERS.API.Controllers
             throw new System.Exception($"Updating user{id} failed on save");
 
         }
-
     }
 }

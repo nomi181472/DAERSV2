@@ -37,23 +37,30 @@ location of projectC:\Users\noman\DAERS
 
 
 
+
+
+
+
+
 [
-  '{{repeat(5)}}',
+  '{{repeat(20)}}',
   {
     Username: '{{firstName("male")}}',
     Gender: 'male',
-    DateOfBirth: '{{date(new Date(1950,0,1), new Date(1999, 11, 31), "YYYY-MM-dd")}}',
     Password: 'password',
     Created: '{{date(new Date(2017,0,1), new Date(2017, 7, 31), "YYYY-MM-dd")}}',
     LastActive: function(){return this.DateCreated; },
     Introduction: '{{lorem(1, "paragraphs")}}',
     City: '{{city()}}',
     Country: '{{country()}}',
-    Weight:'{{integer(30, 130)}}',
-    Height:'{{integer(4,7)}}',
+    Weight:'{{integer(0,1)}}',
+    Height:'{{integer(0,1)}}',
     Email:function(){return this.Username.concat("@gmail.com");},
-    Category:'l',
-    Bmi:function(){return (this.Weight)/(this.Height*this.Height);},
+    Waist:function() {return Math.floor(Math.random(18,30)*(30-18)+15);},
+    Lats:function() {return Math.floor(Math.random(18,30)*(30-18)+20);},
+    Age: '{{integer(18,30)}}',
+    Bmi:function() {return Math.random(18,25)*(25-18)+18;},
+    Category:'N',
     Photos: [
         {
           url: function(num) {
@@ -78,5 +85,21 @@ location of projectC:\Users\noman\DAERS
 
       
   
+  
+
+
+        
+        
+
+        
+        
+        
+        
+
+      
+  
+  
+
+
   
 
