@@ -1,63 +1,53 @@
-Age,BMI,Waist,Total_Record,With_Includes,Label
-18,BMI<18,Waist<0,0,None,N
-18,BMI<18,Waist<0<3,20,None,N
-18,BMI<18,Waist<3<8,20,None,M
-18,BMI<18,Waist<8<12,0,None,0
-18,BMI<18<25,Waist<0,20,None,N
-18,BMI<18<25,Waist<0<3,20,None,N
-18,BMI<18<25,Waist<3<8,20,None,M
-18,BMI<18<25,Waist<8<12,20,None,H
-18,BMI<25<30,Waist<0,20,None,N
-18,BMI<25<30,Waist<0<3,20,None,M
-18,BMI<25<30,Waist<3<8,20,None,M
-18,BMI<25<30,Waist<8<12,20,None,H
-18,BMI<30<35,Waist<0,50,"age=18,30,45,60",N
-30,BMI<30<35,Waist<0,50,"age=18,30,45,60",N
-45,BMI<30<35,Waist<0,-,"age=18,30,45,60",N
-45,BMI<30<35,Waist<0,-,"age=18,30,45,60",N
-18,BMI<30<35,Waist<0<3,40,"age=18,30,45",M
-30,BMI<30<35,Waist<0<3,-,"age=18,30,45",M
-45,BMI<30<35,Waist<0<3,-,"age=18,30,45",M
-18,BMI<30<35,Waist<3<8,50,"waist=3to8,8to12;age=,18,30,45",H
-18,BMI<30<35,Waist<8<12,-,"waist=3to8,8to12;age=,18,30,45",H
-30,BMI<30<35,Waist<3<8,-,"waist=3to8,8to12;age=,18,30,45",H
-30,BMI<30<35,Waist<8<12,-,"waist=3to8,8to12;age=,18,30,45",H
-45,BMI<30<35,Waist<3<8,-,"waist=3to8,8to12;age=,18,30,45",H
-45,BMI<30<35,Waist<8<12,-,"waist=3to8,8to12;age=,18,30,45",H
-30,BMI<18,Waist<0,30,"bmi 12to18,18to25,25to30; age=30,45,60",N
-45,BMI<18,Waist<0,-,"bmi 12to18,18to25,25to30; age=30,45,60",N
-60,BMI<18,Waist<0,-,"bmi 12to18,18to25,25to30; age=30,45,60",N
-30,BMI<18<25,Waist<0,-,"bmi 12to18,18to25,25to30; age=30,45,60",N
-45,BMI<18<25,Waist<0,-,"bmi 12to18,18to25,25to30; age=30,45,60",N
-60,BMI<18<25,Waist<0,-,"bmi 12to18,18to25,25to30; age=30,45,60",N
-30,BMI<25<30,Waist<0,-,"bmi 12to18,18to25,25to30,30to35; age=30,45,60",N
-45,BMI<25<30,Waist<0,-,"bmi 12to18,18to25,25to30,30to35; age=30,45,60",N
-60,BMI<25<30,Waist<0,-,"bmi 12to18,18to25,25to30,30to35; age=30,45,60",N
-30,BMI<30<35,Waist<0,-,"bmi 12to18,18to25,25to30,30to35; age=30,45,60",N
-45,BMI<30<35,Waist<0,-,"bmi 12to18,18to25,25to30,30to35; age=30,45,60",N
-60,BMI<30<35,Waist<0,-,"bmi 12to18,18to25,25to30,30to35; age=30,45,60",N
-30,BMI<18,Waist<3<8,0,"age=30,45,60",-
-45,BMI<18,Waist<3<8,-,"age=30,45,60",-
-60,BMI<18,Waist<3<8,-,"age=30,45,60",-
-30,BMI<18,Waist<8<12,-,"age=30,45,60",-
-45,BMI<18,Waist<8<12,-,"age=30,45,60",-
-60,BMI<18,Waist<8<12,-,"age=30,45,60",-
-30,BMI<18<25,Waist<0<3,30,"BMI=18to25,25to30,30to35;age=30,45",M
-45,BMI<18<25,Waist<0<3,-,"BMI=18to25,25to30,30to35;age=30,45",M
-30,BMI<25<30,Waist<0<3,-,"BMI=18to25,25to30,30to35;age=30,45",M
-45,BMI<25<30,Waist<0<3,-,"BMI=18to25,25to30,30to35;age=30,45",M
-30,BMI<30<35,Waist<0<3,-,"BMI=18to25,25to30,30to35;age=30,45",M
-45,BMI<30<35,Waist<0<3,-,"BMI=18to25,25to30,30to35;age=30,45",M
-30,BMI<18<25,Waist<3<8,50,"Waist=3to8,8to12;BMI=18to25,25to30,30to35;age=30,45",H
-30,BMI<18<25,Waist<8<12,50,"Waist=3to8,8to12;BMI=18to25,25to30,30to35;age=30,45",H
-30,BMI<25<30,Waist<3<8,50,"Waist=3to8,8to12;BMI=18to25,25to30,30to35;age=30,45",H
-30,BMI<25<30,Waist<8<12,50,"Waist=3to8,8to12;BMI=18to25,25to30,30to35;age=30,45",H
-30,BMI<30<35,Waist<3<8,50,"Waist=3to8,8to12;BMI=18to25,25to30,30to35;age=30,45",H
-30,BMI<30<35,Waist<8<12,50,"Waist=3to8,8to12;BMI=18to25,25to30,30to35;age=30,45",H
-45,BMI<18<25,Waist<3<8,50,"Waist=3to8,8to12;BMI=18to25,25to30,30to35;age=30,45",H
-45,BMI<25<30,Waist<3<8,50,"Waist=3to8,8to12;BMI=18to25,25to30,30to35;age=30,45",H
-45,BMI<25<30,Waist<8<12,50,"Waist=3to8,8to12;BMI=18to25,25to30,30to35;age=30,45",H
-45,BMI<18<25,Waist<8<12,50,"Waist=3to8,8to12;BMI=18to25,25to30,30to35;age=30,45",H
-45,BMI<30<35,Waist<8<12,50,"Waist=3to8,8to12;BMI=18to25,25to30,30to35;age=30,45",H
-45,BMI<30<35,Waist<3<8,50,"Waist=3to8,8to12;BMI=18to25,25to30,30to35;age=30,45",H
-45,BMI<30<35,Waist<3<8,50,"Waist=3to8,8to12;BMI=18to25,25to30,30to35;age=30,45",H
+Age,BMI,Waist,Label
+18,BMI<18,Waist<0,N
+18,BMI<18,Waist<0<3,N
+18,BMI<18,Waist<3<8,M
+18,BMI<18,Waist<8<12,M
+18,BMI<18<25,Waist<0,N
+18,BMI<18<25,Waist<0<3,N
+18,BMI<18<25,Waist<3<8,M
+18,BMI<18<25,Waist<8<12,H
+18,BMI<25<30,Waist<0,N
+18,BMI<25<30,Waist<0<3,M
+18,BMI<25<30,Waist<3<8,M
+18,BMI<25<30,Waist<8<12,H
+18,BMI<30<35,Waist<0,N
+30,BMI<30<35,Waist<0,N
+45,BMI<30<35,Waist<0,N
+18,BMI<30<35,Waist<0<3,M
+30,BMI<30<35,Waist<0<3,M
+45,BMI<30<35,Waist<0<3,M
+18,BMI<30<35,Waist<3<8,H
+18,BMI<30<35,Waist<8<12,H
+30,BMI<30<35,Waist<3<8,H
+30,BMI<30<35,Waist<8<12,H
+45,BMI<30<35,Waist<3<8,H
+45,BMI<30<35,Waist<8<12,H
+30,BMI<18,Waist<0,N
+45,BMI<18,Waist<0,N
+60,BMI<18,Waist<0,N
+30,BMI<18<25,Waist<0,N
+45,BMI<18<25,Waist<0,N
+60,BMI<18<25,Waist<0,N
+30,BMI<25<30,Waist<0,N
+45,BMI<25<30,Waist<0,N
+60,BMI<25<30,Waist<0,N
+60,BMI<30<35,Waist<0,N
+30,BMI<18,Waist<3<8,N
+45,BMI<18,Waist<3<8,N
+60,BMI<18,Waist<3<8,N
+30,BMI<18,Waist<8<12,N
+45,BMI<18,Waist<8<12,N
+60,BMI<18,Waist<8<12,N
+30,BMI<18<25,Waist<0<3,M
+45,BMI<18<25,Waist<0<3,M
+30,BMI<25<30,Waist<0<3,M
+45,BMI<25<30,Waist<0<3,M
+30,BMI<18<25,Waist<3<8,H
+30,BMI<18<25,Waist<8<12,H
+30,BMI<25<30,Waist<3<8,H
+30,BMI<25<30,Waist<8<12,H
+45,BMI<18<25,Waist<3<8,H
+45,BMI<25<30,Waist<3<8,H
+45,BMI<25<30,Waist<8<12,H
+45,BMI<18<25,Waist<8<12,H
