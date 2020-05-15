@@ -11,6 +11,8 @@ namespace DAERS.API.Data
         }
         public DbSet<User> Users { get; set; }
         public DbSet<PhotoU> Photos { get; set; }
+        public DbSet<Exercise> Exercises { get; set; }
+        public DbSet<PhotoE> PhotosEx { get; set; }
 
     }
 }

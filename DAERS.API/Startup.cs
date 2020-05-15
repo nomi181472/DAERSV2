@@ -39,6 +39,11 @@ namespace DAERS.API
             services.AddTransient<Seed>();
             services.AddScoped<IAuthRepository,AuthRepository>();
             services.AddScoped<IDaersRepository,DaersRepository>();
+            services.AddScoped<IExerciseRepository,ExerciseRepository>();
+            //Singleton is a single instance for the lifetime of the application domain.
+            //Scoped is a single instance for the duration of the scoped request, which means per HTTP request in ASP.NET.
+            //Transient is a single instance per code request
+            
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options=> {
                 options.TokenValidationParameters=new TokenValidationParameters

@@ -20,6 +20,16 @@ namespace DAERS.API.Helpers
             CreateMap<PhotoForReturnDto,PhotoU>();
             CreateMap<PhotoForCreationDto,PhotoU>();
             CreateMap<UserForRegisterDto,User>();
+            CreateMap<ExerciseForAddDto,Exercise>();
+            CreateMap<PhotoE,PhotosEForDetailDto>();
+            CreateMap<Exercise,ExerciseForDetailDto>()
+            .ForMember(dest=>dest.PhotoEUrl,opt=>{
+            opt.MapFrom(src=>src.PhotosE.FirstOrDefault(p=>p.Url!=null).Url);
+            });
+            CreateMap<Exercise,ExerciseForListDto>()
+            .ForMember(dest=>dest.PhotoEUrl,opt=>{
+            opt.MapFrom(src=>src.PhotosE.FirstOrDefault(p=>p.Url!=null).Url);
+            });
             
             
             

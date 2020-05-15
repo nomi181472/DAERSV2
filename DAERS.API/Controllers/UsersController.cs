@@ -32,7 +32,6 @@ namespace DAERS.API.Controllers
             var users = await _repo.GetUsers();
             var userToReturn=_mapper.Map<IEnumerable<UserForListDto>>(users);
             return Ok(userToReturn);
-
         }
         [HttpGet("{id}",Name="GetUser")]
         public async Task<IActionResult> GetUser(int id)
