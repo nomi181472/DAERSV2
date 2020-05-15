@@ -12121,11 +12121,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Dell\\DAERS\\DAERSV2\\DAERS.API\\DAERS.API.csproj",
+      "projectUniqueName": "C:\\Users\\Dell\\DAERS\\DAERSV2\\DAERS.API\\DAERS.API.csproj",
       "projectName": "DAERS.API",
-      "projectPath": "c:\\Users\\Dell\\DAERS\\DAERSV2\\DAERS.API\\DAERS.API.csproj",
+      "projectPath": "C:\\Users\\Dell\\DAERS\\DAERSV2\\DAERS.API\\DAERS.API.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Dell\\DAERS\\DAERSV2\\DAERS.API\\obj\\",
+      "outputPath": "C:\\Users\\Dell\\DAERS\\DAERSV2\\DAERS.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12186,12 +12186,6 @@
     }
   },
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file c:\\Users\\Dell\\DAERS\\DAERSV2\\DAERS.API\\obj\\DAERS.API.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1603",
       "level": "Warning",
