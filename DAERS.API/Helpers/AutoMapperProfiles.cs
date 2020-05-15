@@ -16,6 +16,13 @@ namespace DAERS.API.Helpers
                 opt.MapFrom(src=>src.Photos.FirstOrDefault(p=>p.IsMain).Url);
             });
             CreateMap<PhotoU,PhotosForDetailedDto>();
+            CreateMap<UserForUpdateDto,User>();
+            CreateMap<PhotoForReturnDto,PhotoU>();
+            CreateMap<PhotoForCreationDto,PhotoU>();
+            CreateMap<UserForRegisterDto,User>();
+            
+            
+            
 
     }
     }

@@ -1,27 +1,242 @@
 [
-    {
-      "Username": "Bass",
-      "Gender": "male",
-      "Age":20,
-      "Password": "password",
-      "Created": "2017-08-07",
-      "Introduction": "Ex dolore culpa amet reprehenderit do sit consequat fugiat proident ipsum fugiat deserunt Lorem aute. Tempor dolore labore cupidatat do elit consequat amet. Est quis dolore cillum culpa commodo deserunt exercitation nulla deserunt ad consectetur eu.\r\n",
-      "City": "Hilltop",
-      "Country": "Czech Republic",
-      "Weight": 109,
-      "Height": 4,
-      "Lats":42,
-      "Waist":33,
-      "Email": "Bass@gmail.com",
-      "Category": "l",
-      "Bmi": 6.8125,
-      "Photos": [
-        {
-          "url": "https://randomuser.me/api/portraits/men/50.jpg",
-          "isMain": true,
-          "description": "Officia mollit quis veniam dolore tempor non."
-        }
-      ]
-    }
-   
-  ]
+  {
+    "Username": "Santos",
+    "Gender": "male",
+    "Password": "password",
+    "Created": "2017-03-23",
+    "Introduction": "Cillum velit enim esse ut consectetur ullamco id aliqua exercitation commodo aliqua dolore. Minim irure mollit culpa consequat aliquip. Non do veniam elit cupidatat eu nostrud. Eu cillum et ea ut voluptate quis. Labore magna anim non ullamco anim laborum esse nulla proident pariatur mollit laborum fugiat anim. Officia nulla duis tempor irure culpa mollit tempor eiusmod reprehenderit in cupidatat reprehenderit anim cupidatat. Consequat occaecat aliquip ea nostrud commodo nisi tempor ullamco ut enim.\r\n",
+    "City": "Crayne",
+    "Country": "Zimbabwe",
+    "Weight": 0,
+    "Height": 1,
+    "Email": "Santos@gmail.com",
+    "Waist": 29,
+    "Lats": 20,
+    "Age": 64,
+    "Bmi": 25.02342219178313,
+    "Category": "N",
+    "Photos": [
+      {
+        "url": "https://randomuser.me/api/portraits/men/19.jpg",
+        "isMain": true,
+        "description": "Est occaecat ullamco culpa eu enim consectetur nulla."
+      }
+    ]
+  },
+  {
+    "Username": "Lee",
+    "Gender": "male",
+    "Password": "password",
+    "Created": "2017-04-29",
+    "Introduction": "Lorem consectetur duis ullamco irure veniam eu mollit in duis ex ex velit. Elit magna quis labore quis. Irure in ea ex laboris. Laboris laborum minim voluptate amet est cillum tempor dolore officia anim. Sunt exercitation mollit sunt duis proident in dolore reprehenderit ut cupidatat nulla reprehenderit pariatur. Ex qui nisi sunt nisi veniam dolor quis proident voluptate tempor culpa mollit in.\r\n",
+    "City": "Spelter",
+    "Country": "Georgia",
+    "Weight": 0,
+    "Height": 0,
+    "Email": "Lee@gmail.com",
+    "Waist": 29,
+    "Lats": 21,
+    "Age": 70,
+    "Bmi": 33.421279725725654,
+    "Category": "N",
+    "Photos": [
+      {
+        "url": "https://randomuser.me/api/portraits/men/82.jpg",
+        "isMain": true,
+        "description": "Occaecat ut tempor magna enim pariatur est velit elit sunt mollit commodo."
+      }
+    ]
+  },
+  {
+    "Username": "Acosta",
+    "Gender": "male",
+    "Password": "password",
+    "Created": "2017-05-26",
+    "Introduction": "Eu proident in consequat duis in ea eiusmod voluptate nulla occaecat et. Non est minim eiusmod ut. Amet nostrud eu veniam cillum pariatur dolore laboris. Proident anim eiusmod culpa minim Lorem dolore tempor veniam. Commodo mollit duis aliquip in nostrud aute laborum reprehenderit occaecat Lorem eu proident.\r\n",
+    "City": "Caroleen",
+    "Country": "Saint Vincent and The Grenadines",
+    "Weight": 0,
+    "Height": 0,
+    "Email": "Acosta@gmail.com",
+    "Waist": 24,
+    "Lats": 23,
+    "Age": 60,
+    "Bmi": 31.72059814731483,
+    "Category": "N",
+    "Photos": [
+      {
+        "url": "https://randomuser.me/api/portraits/men/66.jpg",
+        "isMain": true,
+        "description": "Nostrud amet deserunt amet est in quis cupidatat do et."
+      }
+    ]
+  },
+  {
+    "Username": "Joyce",
+    "Gender": "male",
+    "Password": "password",
+    "Created": "2017-04-11",
+    "Introduction": "Eiusmod esse sit occaecat ut cupidatat ut reprehenderit pariatur tempor fugiat. Minim eiusmod in ullamco dolor in ipsum labore occaecat cillum voluptate magna. Sunt aute quis ullamco et do Lorem excepteur dolore ad magna consequat id ad. Enim incididunt labore ut reprehenderit laborum sint consectetur nostrud irure magna officia ipsum tempor. Laboris ad consequat irure veniam nisi occaecat elit nostrud.\r\n",
+    "City": "Dragoon",
+    "Country": "Ghana",
+    "Weight": 0,
+    "Height": 1,
+    "Email": "Joyce@gmail.com",
+    "Waist": 29,
+    "Lats": 24,
+    "Age": 64,
+    "Bmi": 28.419240289480335,
+    "Category": "N",
+    "Photos": [
+      {
+        "url": "https://randomuser.me/api/portraits/men/99.jpg",
+        "isMain": true,
+        "description": "Aute quis consectetur do deserunt mollit est nostrud adipisicing pariatur tempor irure non."
+      }
+    ]
+  },
+  {
+    "Username": "Calhoun",
+    "Gender": "male",
+    "Password": "password",
+    "Created": "2017-07-02",
+    "Introduction": "Deserunt dolor amet sit nulla fugiat dolore nulla labore pariatur Lorem eiusmod pariatur. Veniam eiusmod occaecat dolor commodo reprehenderit dolore elit incididunt nostrud tempor id enim. Laborum aute qui cillum velit incididunt incididunt commodo aliquip ea nisi. Et eiusmod officia nostrud nisi cupidatat aliquip aliquip pariatur deserunt nisi exercitation fugiat duis cillum.\r\n",
+    "City": "Silkworth",
+    "Country": "Virgin Islands (British)",
+    "Weight": 1,
+    "Height": 1,
+    "Email": "Calhoun@gmail.com",
+    "Waist": 24,
+    "Lats": 26,
+    "Age": 62,
+    "Bmi": 27.661797057909926,
+    "Category": "N",
+    "Photos": [
+      {
+        "url": "https://randomuser.me/api/portraits/men/46.jpg",
+        "isMain": true,
+        "description": "Aute excepteur adipisicing cillum ad eiusmod."
+      }
+    ]
+  },
+  {
+    "Username": "Kent",
+    "Gender": "male",
+    "Password": "password",
+    "Created": "2017-07-11",
+    "Introduction": "Ex tempor minim mollit magna sit minim adipisicing laboris minim ullamco aute commodo. Consequat excepteur fugiat elit voluptate pariatur minim enim quis voluptate ex excepteur minim. Occaecat magna pariatur eiusmod nostrud ut irure aute. Enim duis elit sunt nostrud ad minim reprehenderit nostrud Lorem fugiat sunt do minim. Ipsum aliqua voluptate labore ut sint et nisi. Proident aliqua aliqua do sint eiusmod amet.\r\n",
+    "City": "Rossmore",
+    "Country": "Botswana",
+    "Weight": 1,
+    "Height": 0,
+    "Email": "Kent@gmail.com",
+    "Waist": 28,
+    "Lats": 29,
+    "Age": 64,
+    "Bmi": 33.58159250500208,
+    "Category": "N",
+    "Photos": [
+      {
+        "url": "https://randomuser.me/api/portraits/men/80.jpg",
+        "isMain": true,
+        "description": "In amet cupidatat reprehenderit reprehenderit minim Lorem."
+      }
+    ]
+  },
+  {
+    "Username": "Berger",
+    "Gender": "male",
+    "Password": "password",
+    "Created": "2017-01-09",
+    "Introduction": "Duis voluptate et irure cillum ullamco ut irure labore occaecat ipsum nostrud minim voluptate minim. Quis in veniam nisi do duis adipisicing eiusmod aute sit commodo. Officia excepteur nisi et culpa officia ex non ad laborum commodo.\r\n",
+    "City": "Axis",
+    "Country": "United Arab Emirates",
+    "Weight": 1,
+    "Height": 0,
+    "Email": "Berger@gmail.com",
+    "Waist": 28,
+    "Lats": 26,
+    "Age": 64,
+    "Bmi": 27.50729895480697,
+    "Category": "N",
+    "Photos": [
+      {
+        "url": "https://randomuser.me/api/portraits/men/60.jpg",
+        "isMain": true,
+        "description": "Ut tempor eu voluptate quis adipisicing amet adipisicing nulla officia proident enim."
+      }
+    ]
+  },
+  {
+    "Username": "Casey",
+    "Gender": "male",
+    "Password": "password",
+    "Created": "2017-03-28",
+    "Introduction": "Aliquip et quis in anim deserunt dolore deserunt in Lorem laborum ipsum laboris ipsum commodo. Aute ex nulla ea laborum quis minim non nisi ipsum. Laborum magna sint dolore excepteur ea minim. Enim ullamco magna pariatur consectetur ipsum veniam pariatur laboris. Proident id cillum tempor anim velit laborum commodo adipisicing irure non ex ullamco velit. Lorem in quis do labore fugiat deserunt occaecat laboris ad aliqua incididunt aliquip. Est ex enim dolore reprehenderit pariatur laboris amet laboris id est anim.\r\n",
+    "City": "Ada",
+    "Country": "Myanmar",
+    "Weight": 0,
+    "Height": 1,
+    "Email": "Casey@gmail.com",
+    "Waist": 20,
+    "Lats": 21,
+    "Age": 66,
+    "Bmi": 29.666001018775273,
+    "Category": "N",
+    "Photos": [
+      {
+        "url": "https://randomuser.me/api/portraits/men/38.jpg",
+        "isMain": true,
+        "description": "Consectetur aute anim cupidatat tempor voluptate pariatur."
+      }
+    ]
+  },
+  {
+    "Username": "Miranda",
+    "Gender": "male",
+    "Password": "password",
+    "Created": "2017-08-24",
+    "Introduction": "Lorem qui nostrud commodo est id quis esse mollit consectetur amet amet do. Ad officia eu elit nostrud sint culpa occaecat aliqua. Esse eu ipsum ea amet commodo. Mollit ipsum nulla laboris reprehenderit labore fugiat consequat. Proident elit consequat anim irure cillum esse. Est consequat eu mollit cillum culpa ad. Minim ea occaecat non officia occaecat qui quis occaecat consectetur id reprehenderit anim.\r\n",
+    "City": "Malott",
+    "Country": "Micronesia",
+    "Weight": 1,
+    "Height": 0,
+    "Email": "Miranda@gmail.com",
+    "Waist": 34,
+    "Lats": 35,
+    "Age": 62,
+    "Bmi": 23.362839840995477,
+    "Category": "N",
+    "Photos": [
+      {
+        "url": "https://randomuser.me/api/portraits/men/70.jpg",
+        "isMain": true,
+        "description": "Sit ipsum laboris qui fugiat esse non ullamco laborum."
+      }
+    ]
+  },
+  {
+    "Username": "Lindsey",
+    "Gender": "male",
+    "Password": "password",
+    "Created": "2017-07-13",
+    "Introduction": "Nulla esse sit tempor incididunt enim ullamco aliquip reprehenderit nisi aliqua pariatur incididunt veniam adipisicing. Nostrud excepteur duis nostrud nostrud esse eiusmod laboris labore deserunt exercitation. Culpa deserunt duis nostrud cillum proident aliqua. Anim amet labore officia velit tempor Lorem proident. Duis velit deserunt et ea laboris dolor aliquip voluptate. Adipisicing voluptate aliquip est aliquip elit amet ullamco.\r\n",
+    "City": "Brethren",
+    "Country": "Brunei Darussalam",
+    "Weight": 0,
+    "Height": 0,
+    "Email": "Lindsey@gmail.com",
+    "Waist": 27,
+    "Lats": 29,
+    "Age": 60,
+    "Bmi": 18.69953194053257,
+    "Category": "N",
+    "Photos": [
+      {
+        "url": "https://randomuser.me/api/portraits/men/90.jpg",
+        "isMain": true,
+        "description": "Do enim ut commodo duis anim commodo id ad eiusmod irure."
+      }
+    ]
+  }
+]
