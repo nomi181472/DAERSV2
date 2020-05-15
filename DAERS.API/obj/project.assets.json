@@ -12103,11 +12103,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\noman\\DAERS\\DAERS.API\\DAERS.API.csproj",
+      "projectUniqueName": "C:\\Users\\noman\\DAERS\\DAERS.API\\DAERS.API.csproj",
       "projectName": "DAERS.API",
-      "projectPath": "c:\\Users\\noman\\DAERS\\DAERS.API\\DAERS.API.csproj",
+      "projectPath": "C:\\Users\\noman\\DAERS\\DAERS.API\\DAERS.API.csproj",
       "packagesPath": "C:\\Users\\noman\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\noman\\DAERS\\DAERS.API\\obj\\",
+      "outputPath": "C:\\Users\\noman\\DAERS\\DAERS.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
