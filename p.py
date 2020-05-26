@@ -1,9 +1,13 @@
-import math
-x=float(input())
-y=float(input())
-#y=(math.pow(y,2))
-x=x*2.20462
-z=int(y)*12+(y-int(y))*100
-
-
-print(703*x/z**2,x,z)
+# import flask microframework library
+from flask import Flask
+ 
+# initialize the flask application
+app = Flask(__name__)
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+if __name__ == "__main__":
+#     run flask application in debug mode
+    app.run(debug=True)
+    #set FLASK_ENV=developmentfla
+    #set FLASK_APP=application.py

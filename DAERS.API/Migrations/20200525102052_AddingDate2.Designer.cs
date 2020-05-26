@@ -3,14 +3,16 @@ using System;
 using DAERS.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DAERS.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20200525102052_AddingDate2")]
+    partial class AddingDate2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,8 +48,6 @@ namespace DAERS.API.Migrations
                     b.Property<string>("Description");
 
                     b.Property<int>("ExerciseId");
-
-                    b.Property<bool>("IsMain");
 
                     b.Property<string>("PublicEId");
 

@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
 using DAERS.API.Data;
 using DAERS.API.Dtos;
+using DAERS.API.Dtos.DtosForExercise;
 using DAERS.API.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DAERS.API.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ExerciseController : ControllerBase
@@ -38,6 +40,7 @@ namespace DAERS.API.Controllers
 
 
 
+
         [HttpGet("{id}",Name="GetExercise")]
         public async Task<IActionResult> GetExercise(int id)
         {
@@ -50,6 +53,16 @@ namespace DAERS.API.Controllers
             var exercises=await _repo.GetListExercises();
             var exerciseForreturn=_mapper.Map<IEnumerable<ExerciseForListDto>>(exercises);
             return Ok(exercises);
+        }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateExercise(int id,ExerciseForUpdateDto udto)
+        {
+            var userfromrepo=await _repo.GetExercise(id);
+            _mapper.Map(udto,userfromrepo);
+            if(await _repo.SaveAllE())
+            return NoContent();
+            throw new System.Exception($"Updating Exercise:{id} failed on save");
+
         }
     }
 }

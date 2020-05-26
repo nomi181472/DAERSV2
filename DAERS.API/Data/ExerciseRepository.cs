@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using DAERS.API.Models;
 using Microsoft.EntityFrameworkCore;
@@ -58,6 +59,11 @@ namespace DAERS.API.Data
             await _context.Exercises.AddAsync(exercise);
             await _context.SaveChangesAsync();
             return exercise;
+        }
+
+        public async Task<PhotoE> GetMainPhotoForExercise(int exerciseId)
+        {
+            return await _context.PhotosEx.Where(u=>u.ExerciseId==exerciseId).FirstOrDefaultAsync(p=>p.IsMain);
         }
     }
 }

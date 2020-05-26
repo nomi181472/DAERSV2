@@ -1,6 +1,7 @@
 using System.Linq;
 using AutoMapper;
 using DAERS.API.Dtos;
+using DAERS.API.Dtos.DtosForExercise;
 using DAERS.API.Models;
 
 namespace DAERS.API.Helpers
@@ -21,7 +22,10 @@ namespace DAERS.API.Helpers
             CreateMap<PhotoForCreationDto,PhotoU>();
             CreateMap<UserForRegisterDto,User>();
             CreateMap<ExerciseForAddDto,Exercise>();
+
+            
             CreateMap<PhotoE,PhotosEForDetailDto>();
+            CreateMap<ExerciseForUpdateDto,Exercise>();
             CreateMap<Exercise,ExerciseForDetailDto>()
             .ForMember(dest=>dest.PhotoEUrl,opt=>{
             opt.MapFrom(src=>src.PhotosE.FirstOrDefault(p=>p.Url!=null).Url);
@@ -30,6 +34,8 @@ namespace DAERS.API.Helpers
             .ForMember(dest=>dest.PhotoEUrl,opt=>{
             opt.MapFrom(src=>src.PhotosE.FirstOrDefault(p=>p.Url!=null).Url);
             });
+            CreateMap<PhotosEForReturnDto,PhotoE>();
+             CreateMap<PhotosEForCreationDto,PhotoE>();
             
             
             
