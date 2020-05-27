@@ -2,6 +2,7 @@ using System.Linq;
 using AutoMapper;
 using DAERS.API.Dtos;
 using DAERS.API.Dtos.DtosForExercise;
+using DAERS.API.Dtos.DtosForNutritionFacts;
 using DAERS.API.Models;
 
 namespace DAERS.API.Helpers
@@ -22,8 +23,6 @@ namespace DAERS.API.Helpers
             CreateMap<PhotoForCreationDto,PhotoU>();
             CreateMap<UserForRegisterDto,User>();
             CreateMap<ExerciseForAddDto,Exercise>();
-
-            
             CreateMap<PhotoE,PhotosEForDetailDto>();
             CreateMap<ExerciseForUpdateDto,Exercise>();
             CreateMap<Exercise,ExerciseForDetailDto>()
@@ -36,8 +35,17 @@ namespace DAERS.API.Helpers
             });
             CreateMap<PhotosEForReturnDto,PhotoE>();
              CreateMap<PhotosEForCreationDto,PhotoE>();
-            
-            
+             CreateMap<NutritionFactForAddDto,NutritionFact>();
+             CreateMap<NutritionFact,NutritionFactForDetailedDto>().ForMember(dest=>dest.PhotoNUrl,opt=>{
+                opt.MapFrom(src=>src.PhotosE.FirstOrDefault(p=>p.IsMain).Url);
+            });
+            CreateMap<PhotoN,PhotosNForDetailedDto>();
+            CreateMap<NutritionFact,NutritionFactsForListDto>().ForMember(dest=>dest.PhotoNUrl,opt=>{
+                opt.MapFrom(src=>src.PhotosE.FirstOrDefault(p=>p.IsMain).Url);
+            });
+            CreateMap<NutritionFactForUpdateDto,NutritionFact>();
+            CreateMap<PhotosNForReturnDto,PhotoN>();
+            CreateMap<PhotosNForCreationDto,PhotoN>();
             
 
     }

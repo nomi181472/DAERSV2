@@ -52,13 +52,13 @@ namespace DAERS.API.Controllers
         public async Task<IActionResult> GetListExercises(){
             var exercises=await _repo.GetListExercises();
             var exerciseForreturn=_mapper.Map<IEnumerable<ExerciseForListDto>>(exercises);
-            return Ok(exercises);
+            return Ok(exerciseForreturn);
         }
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateExercise(int id,ExerciseForUpdateDto udto)
         {
-            var userfromrepo=await _repo.GetExercise(id);
-            _mapper.Map(udto,userfromrepo);
+            var exerciseFromRepo=await _repo.GetExercise(id);
+            _mapper.Map(udto,exerciseFromRepo);
             if(await _repo.SaveAllE())
             return NoContent();
             throw new System.Exception($"Updating Exercise:{id} failed on save");

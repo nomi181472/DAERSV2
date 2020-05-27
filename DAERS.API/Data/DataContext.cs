@@ -13,6 +13,8 @@ namespace DAERS.API.Data
         public DbSet<PhotoU> Photos { get; set; }
         public DbSet<Exercise> Exercises { get; set; }
         public DbSet<PhotoE> PhotosEx { get; set; }
+        public DbSet<NutritionFact>   NutritionFacts { get; set; }
+        public DbSet<PhotoN> PhotosNF { get; set; }
 
     }
 }

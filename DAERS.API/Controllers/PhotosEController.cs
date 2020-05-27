@@ -17,6 +17,7 @@ namespace DAERS.API.Controllers
 {
     [Authorize]
     [Route("api/Exercise/{ExerciseId}/photosE")]
+    
     public class PhotosEController : ControllerBase
     {
         private readonly IMapper _mapper;

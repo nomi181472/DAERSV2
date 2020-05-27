@@ -15,6 +15,6 @@ namespace DAERS.API.Data
          Task<Exercise> AddExercise(Exercise exercise);
          
          Task<bool> ExerciseExists(string exerciseName);
-         Task<PhotoE> GetMainPhotoForExercise(int userId);
+         Task<PhotoE> GetMainPhotoForExercise(int exerciseId);
     }
 }
