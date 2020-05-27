@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using DAERS.API.Helpers.Paging;
 using DAERS.API.Models;
 
 namespace DAERS.API.Data
@@ -9,7 +10,7 @@ namespace DAERS.API.Data
          void Add<T>(T entity) where T:class; //check
          void Delete<T>(T entity)where T:class;
          Task<bool> SaveAll();
-         Task<IEnumerable<User>> GetUsers();
+         Task<PagedList<User>> GetUsers(UParams uParams);
          Task<User> GetUser(int id);
          Task<PhotoU> GetPhoto(int id);
          

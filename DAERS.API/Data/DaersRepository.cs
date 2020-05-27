@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DAERS.API.Helpers.Paging;
 using DAERS.API.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -29,9 +30,28 @@ namespace DAERS.API.Data
             var user=await _context.Users.Include(p=>p.Photos).FirstOrDefaultAsync(u=>u.Id==id);
             return user;
         }
-      public async  Task<IEnumerable<User>> GetUsers(){
-          var users=await _context.Users.Include(p=>p.Photos).ToListAsync();
-          return users;
+      public async  Task<PagedList<User>> GetUsers(UParams uParams){
+          var users=_context.Users.Include(p=>p.Photos).OrderByDescending(u=>u.LastActive).AsQueryable();
+            users=users.Where(u=>u.Id!=uParams.UserId);
+            // category will be implemeted
+            if(uParams.MinAge!=18 || uParams.MaxAge!=99)
+            {
+                users=users.Where(u=>u.Age>=uParams.MinAge && u.Age<=uParams.MaxAge);
+            }
+            if(!string.IsNullOrEmpty(uParams.OrderBy))
+            {
+                switch (uParams.OrderBy)
+                {
+                    case "created":
+                    users=users.OrderByDescending(u=>u.Created);
+                    break;
+                    default:
+                    users=users.OrderByDescending(u=>u.LastActive);
+                    break;
+
+                }
+            }
+          return await PagedList<User>.CreateAsync(users,uParams.PageNumber,uParams.PageSize);
         }
 
 

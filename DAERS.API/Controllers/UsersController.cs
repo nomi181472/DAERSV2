@@ -6,6 +6,7 @@ using AutoMapper;
 using DAERS.API.Data;
 using DAERS.API.Dtos;
 using DAERS.API.Helpers;
+using DAERS.API.Helpers.Paging;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -29,10 +30,19 @@ namespace DAERS.API.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetUsers()
+        public async Task<IActionResult> GetUsers([FromQuery]UParams uParams)
         {
-            var users = await _repo.GetUsers();
+           var currentUserId= int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+           var userfromrepo=await _repo.GetUser(currentUserId);
+           uParams.UserId=currentUserId;
+           if(string.IsNullOrEmpty(uParams.Category))
+           {
+               uParams.Category=userfromrepo.Category;
+           }
+
+            var users = await _repo.GetUsers(uParams);
             var userToReturn=_mapper.Map<IEnumerable<UserForListDto>>(users);
+            Response.AddPagination(users.CurrentPage,users.PageSize,users.TotalCount,users.TotalPage);
             return Ok(userToReturn);
         }
         [HttpGet("{id}",Name="GetUser")]
