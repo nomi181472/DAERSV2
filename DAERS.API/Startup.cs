@@ -41,6 +41,7 @@ namespace DAERS.API
             services.AddScoped<IDaersRepository,DaersRepository>();
             services.AddScoped<IExerciseRepository,ExerciseRepository>();
             services.AddScoped<INutritionFactRepository,NutritionFactRepository>();
+            services.AddScoped<LogUserActivity>();
             //Singleton is a single instance for the lifetime of the application domain.
             //Scoped is a single instance for the duration of the scoped request, which means per HTTP request in ASP.NET.
             //Transient is a single instance per code request

@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 using AutoMapper;
 using DAERS.API.Data;
 using DAERS.API.Dtos;
+using DAERS.API.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DAERS.API.Controllers
 {
+    [ServiceFilter(typeof(LogUserActivity))]
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]

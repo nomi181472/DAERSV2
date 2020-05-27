@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using DAERS.API.Data;
 using DAERS.API.Dtos;
+using DAERS.API.Helpers;
 using DAERS.API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -39,6 +40,7 @@ namespace DAERS.API.Controllers
             var userToReturn=_mapper.Map<UserForDetailedDto>(createdUser);
             return CreatedAtRoute("GetUser",new {Controller="Users",id=createdUser.Id},userToReturn);
         }
+        
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserForLoginDto LogDto)
         {
@@ -61,10 +63,16 @@ namespace DAERS.API.Controllers
             };
             var tokenHandler = new JwtSecurityTokenHandler();
             var token = tokenHandler.CreateToken(tokenDescriptor);
+            this.UpdateTime(LogDto);
             return Ok(new
             {
                 token = tokenHandler.WriteToken(token)
             });
+        }
+        [ServiceFilter(typeof(LogUserActivity))]
+        public void UpdateTime(UserForLoginDto loginDto){
+            //will be soon
+            return;
         }
     }
 }
