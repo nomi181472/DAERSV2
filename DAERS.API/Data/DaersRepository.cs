@@ -34,6 +34,16 @@ namespace DAERS.API.Data
           var users=_context.Users.Include(p=>p.Photos).OrderByDescending(u=>u.LastActive).AsQueryable();
             users=users.Where(u=>u.Id!=uParams.UserId);
             // category will be implemeted
+            if(uParams.likees)
+            {
+                var usersLikees=await GetUserLikes(uParams.UserId,uParams.likers);
+                users=users.Where(x=>usersLikees.Contains(x.Id));
+            }
+            if(uParams.likers)
+            {
+                   var usersLikers=await GetUserLikes(uParams.UserId,uParams.likers);
+                users=users.Where(x=>usersLikers.Contains(x.Id));
+            }
             if(uParams.MinAge!=18 || uParams.MaxAge!=99)
             {
                 users=users.Where(u=>u.Age>=uParams.MinAge && u.Age<=uParams.MaxAge);
@@ -51,7 +61,21 @@ namespace DAERS.API.Data
 
                 }
             }
+            
           return await PagedList<User>.CreateAsync(users,uParams.PageNumber,uParams.PageSize);
+        }
+        private async Task<IEnumerable<int>> GetUserLikes(int id,bool likers)
+        {
+            var user=await _context.Users.Include(x=>x.Likers).Include(x=>x.Likees)
+            .FirstOrDefaultAsync(x=>x.Id==id);
+            if(likers)
+            {
+                return user.Likers.Where(x=>x.LikeeId==id).Select(x=>x.LikerId);
+            }
+            else
+            {
+                return user.Likees.Where(x=>x.LikerId==id).Select(x=>x.LikeeId);
+            }
         }
 
 
@@ -69,6 +93,12 @@ namespace DAERS.API.Data
         public async Task<PhotoU> GetMainPhotoForUser(int userId)
         {
             return await _context.Photos.Where(u=>u.UserId==userId).FirstOrDefaultAsync(p=>p.IsMain);
+        }
+
+        public async Task<Like> GetLike(int userId, int recipientId)
+        {
+            return await _context.Likes.FirstOrDefaultAsync(
+                u=>u.LikerId==userId && u.LikeeId==recipientId);
         }
     }
 }

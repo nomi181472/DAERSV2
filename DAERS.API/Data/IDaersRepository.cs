@@ -15,5 +15,6 @@ namespace DAERS.API.Data
          Task<PhotoU> GetPhoto(int id);
          
          Task<PhotoU> GetMainPhotoForUser(int userId);
+         Task<Like> GetLike(int userId,int recipientId);
     }
 }

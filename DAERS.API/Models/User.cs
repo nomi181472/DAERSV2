@@ -25,6 +25,9 @@ namespace DAERS.API.Models
         public string Category { get; set; }
         public string Email { get; set; }
         public ICollection<PhotoU> Photos { get; set; }
+        public ICollection<Like> Likers { get; set; }
+        public ICollection<Like> Likees { get; set; }
+        
 
 
        
